@@ -1,0 +1,31 @@
+package com.nymble.travelPackage.service;
+
+import com.nymble.travelPackage.model.TravelPackage;
+import com.nymble.travelPackage.repository.TravelPackageRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+import java.util.Optional;
+
+@Service
+public class TravelPackageService {
+    private final TravelPackageRepository travelPackageRepository;
+
+     @Autowired
+    public TravelPackageService(TravelPackageRepository travelPackageRepository) {
+        this.travelPackageRepository = travelPackageRepository;
+    }
+
+    public getDestinationResponse getDestination(Id id){
+
+        // HashMap<Destination,List<Activity>> destinationMap = new HashMap<>();
+        // String travelPackageName = [Select name from TravelPackage where id= id];
+        // travelPackageRepository.
+        
+
+        // return destinationMap;
+    }
+
+    // Implement methods to manage travel packages (create, read, update, delete, sign-up)
+}
